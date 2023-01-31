@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/asset/style.css">
+    <script src="/login.js"></script>
+  </head>
+  <body>
+    <div class="wrap-login">
+      <div class="bg-login"></div>
+      <div class="form-login">
+        <h2>Đăng nhập</h2>
+        <form method="post">
+          <label>Tài khoản :</label>
+          <input type="text" name="username" id="username" />
+          <label>Mật khẩu :</label>
+          <input type="password" name="password" id="password" />
+          <label id="valid"></label>
+          <input type="button" value="Login" id="btnLogin" onclick="onLogin()" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

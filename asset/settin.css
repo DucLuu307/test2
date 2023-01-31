@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main-header{ 
+    background: #09182d;
+    display: flow-root;
+}
+.main-header,.main-chart{
+    padding: 15px 25px;
+}
+.main-header .title-pages{
+    float: left
+}
+.main-header .title-pages h2{
+    font-size: 26px;
+    color: white;
+    padding-top: 8px;
+}
+.main-header .avatar{
+    float: right;
+}
+.main-header .avatar img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.main-header .main-menu{
+    padding-top: 14px;
+    text-align: center;
+    font-size: 20px;
+}
+.main-header .main-menu ul li{
+    display: inline;
+    list-style: none;
+    padding: 20px;
+}
+.main-header .main-menu ul li a{
+    text-decoration: none;
+}
+.main-header .main-menu ul li a:hover{
+    color: antiquewhite;
+    font-weight: bold;
+}
+.main-chart #select-date{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.main-chart span{
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#select-date .active{
+    background-color: #ef3226;
+    color: white;
+}
+.container{
+    display: grid;
+    grid-template-columns: 30% 60%;
+    padding-left: 55px;
+}
+.container .content-left{
+    padding: 10px 10px;
+}
+.container .content-left li{
+    list-style: none;
+    line-height: 2;
+    border-bottom: 1px solid #333;
+}
+.container .content-left a{
+    text-decoration: none;
+    padding: 0px 40px;
+    text-justify: 5px;
+}
+.container .content-left i{
+    margin-right: 12px;
+}
+.container .content-right{
+    padding-top: 10px;
+    padding-left: 4px;
+    border-left: 2px solid #333;
+    height: 540px;
+}
+.container .content-right h2{
+    font-weight: 400;
+}
+.container .content-right img{
+    width: 142px;
+    height: 144px;
+    margin-left: 50px;
+}
+.container .content-right .input-profile{
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.container .content-right input{
+    width: 420px;
+    height: 26px;
+}

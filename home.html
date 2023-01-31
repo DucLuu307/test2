@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-Home</title>
+    <link rel="stylesheet" href="/asset/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="/asset/responsive.css">
+    <link rel="stylesheet" href="/asset/main.css">
+    <link rel="stylesheet" href="/asset/mobile.css">
+    <!-- <script type="text/javascript" src="http://rilwis.googlecode.com/svn/trunk/weather.min.js"></script> -->
+</head>
+<body>
+    <div id="wrapper">
+        <div class="header">
+            <div class="name-house">
+                <div class="user">
+                    <img src="/img/home-icon.png" width="90" height="80" alt="">
+                    <p class="name-avartar">My Home</p>
+                </div>
+            </div>
+            <div class="menu-mobile">
+                <label for="mobile-nav">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <input type="checkbox" hidden class="nav-input" id="mobile-nav">
+                <label for="mobile-nav" class="nav-overlay"></label>
+               
+                <div class="nav-mobile">
+                        <div class="img-home">
+                            <div class="user">
+                                <img src="/img/avatar.jpg" style="width:80px; height:80px" alt="">
+                                <p>User</p>
+                            </div>
+                            <label for="mobile-nav" class="nav-close">
+                                <h2 class="fas fa-angle-double-right"></h2>
+                            </label>
+                        </div>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#">
+                                    <em class="fab fa-sistrix"></em>
+                                    <p>Tìm kiếm
+                                    </p>
+                                </a> </li>
+                                <li><a href="#" >
+                                    <em class="fas fa-cog"></em>
+                                    <p>Setting</p>
+                                </a> </li>
+                                <li><a href="" >
+                                    <em class="far fa-chart-bar"></em>
+                                    <p>Static</p>
+                                </a></li>
+                                <li><a href="" >
+                                    <em class="fas fa-th-large	"></em>
+                                    <p>Home</p>
+                                </a></li>
+                                <li><a href="">
+                                    <em class="far fa-clock"></em>
+                                    <p>Routine</p>
+                                </a></li>
+                                <h4>Nhiệt độ onside:</h4>
+                                <p id="tempMobile"></p>
+                                <h4>Độ ẩm:</h4>
+                                <p id="humMobile"></p>
+                                <h4>Hướng gió:</h4>
+                                <p>12km/h</p>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="aside">
+            <img src="../asset/img/funysundy.png" style="width: 220px;" alt="">
+            <div class="party-cloudy">
+                <div class="day">
+                    
+                    <div id="time"></div>
+                    <p class="date"></p> <p class="month"></p> 
+                </div>
+                <div class="template">
+                    <div class="template-on">
+                        <h4>Nhiệt độ onside
+                        </h4>
+                        <h4> <span id="temp"></span>°C</h4>
+                    </div>
+                    <div class="template-of">
+                        <h4>Nhiệt độ outside</h4>
+                        <h4>28°C</h4>
+                    </div>
+                    <div class="humditi">
+                        <h4>Độ ẩm 
+                        </h4>
+                        <h4><span id="hum"></span>%</h4>
+                    </div>
+                    <div class="speed">
+                        <h4>Hướng Gió</h4>
+                        <h4>12km/h</h4>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="main-header">
+                <div class="main-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./static.html">Static</a></li>
+                        <li><a href="#">Routines</a></li>
+                        <li><a href="./setting.html">Setting</a></li>
+                        <li id="recive">Mở</li>
+                    </ul>
+                </div>
+                <div class="main-menu">
+                    <ul>
+                        <li><a href="#" class="far fa-comment-dots" onclick="" id="chat">
+                            <span>1</span>
+                        </a></li>
+                        <li><a href="#" class="far fa-bell" onclick="" id="notifi">
+                            <span>2</span>
+                        </a></li>
+                    </ul>
+                    <p><a href="#">
+                        <img src="../asset/img/avatar.jpg" style="width: 36px;height: 36px;" alt="">
+                    </a></p>
+                </div>
+                <div class="menu-notifi">
+                    <div class="notifi-header">
+                        <h4>Thông báo</h4>
+                    </div>
+                    <div class="notifi-body">
+                        <div class="signal-notifi d-flex align-item-center">
+                            <div class="notifi-icon">
+                                <a href="" class="far fa-id-card"></a>
+                            </div>
+                            <div class="notifi-content">
+                                <a href="">
+                                    <h5>Product supply marketing</h5>
+                                </a>
+                                <p>15h meet partners </p>
+                            </div>
+                        </div>
+                        <div class="signal-notifi d-flex align-item-center">
+                            <div class="notifi-icon">
+                                <a href="" class="far fa-id-card"></a>
+                            </div>
+                            <div class="notifi-content">
+                                <a href="">
+                                    <h5>Product supply marketing</h5>
+                                </a>
+                                <p>15h meet partners </p>
+                            </div>
+                        </div>
+                        <div class="signal-notifi d-flex align-item-center">
+                            <div class="notifi-icon">
+                                <a href="" class="far fa-id-card"></a>
+                            </div>
+                            <div class="notifi-content">
+                                <a href="">
+                                    <h5>Product supply marketing</h5>
+                                </a>
+                                <p>15h meet partners </p>
+                            </div>
+                        </div>
+                        <div class="signal-notifi d-flex align-item-center">
+                            <div class="notifi-icon">
+                                <a href="" class="far fa-id-card"></a>
+                            </div>
+                            <div class="notifi-content">
+                                <a href="">
+                                    <h5>Product supply marketing</h5>
+                                </a>
+                                <p>15h meet partners </p>
+                            </div>
+                        </div>
+                        <div class="signal-notifi d-flex align-item-center">
+                            <div class="notifi-icon">
+                                <a href="" class="far fa-id-card"></a>
+                            </div>
+                            <div class="notifi-content">
+                                <a href="">
+                                    <h5>Product supply marketing</h5>
+                                </a>
+                                <p>15h meet partners </p>
+                            </div>
+                        </div>
+                        <div class="signal-notifi d-flex align-item-center">
+                            <div class="notifi-icon">
+                                <a href="" class="far fa-id-card"></a>
+                            </div>
+                            <div class="notifi-content">
+                                <a href="">
+                                    <h5>Product supply marketing</h5>
+                                </a>
+                                <p>15h meet partners </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notifi-footer">
+                        <div class="submit-button">
+                            <a href="" class="seemore">See More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popupMess">
+                    <div class="chatHeader">
+                        <h3>Chat with us</h3>
+                        <div class="chatList">
+                            <ul>
+                                <li><a href="">
+                                    <div class="member-ava">
+                                        <img src="../asset/img/avatar.jpg" alt="">
+                                    </div>
+                                </a></li>
+                                <li><a href="">
+                                    <div class="member-ava">
+                                        <img src="../asset/img/avatar.jpg" alt="">
+                                    </div>
+                                </a></li>
+                                <li><a href="">
+                                    <div class="member-ava">
+                                        <img src="../asset/img/avatar.jpg" alt="">
+                                    </div>
+                                </a></li>
+                                <li><a href="">
+                                    <div class="member-ava">
+                                        <img src="../asset/img/avatar.jpg" alt="">
+                                    </div>
+                                </a></li>
+                                <li><a href="">
+                                    <div class="member-ava">
+                                        <img src="../asset/img/avatar.jpg" alt="">
+                                    </div>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="chatBody">
+                        <p class="senddate">Sunday,8</p>
+                        <div class="chatSend">
+                            <div class="smsAvatar">
+                                <img src="../asset/img/avatar.jpg" alt="">
+                            </div>
+                            <div class="smsContent">
+                                <p>Hi! Welcome.How can I help you?</p>
+                            </div>
+                        </div>
+                        <div class="chatSend chatRecive">
+                            <div class="smsContent">
+                                <p>Hello</p>
+                            </div>
+                            <div class="smsAvatar">
+                                <img src="../asset/img/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chatFooter">
+                        <div class="chat_input_box d-flex align-items-center">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Write your message">
+                                <div class="input-group-append">
+                                    <button class="btn " type="button">
+                                        <i class="far fa-grin"></i>
+                                    </button>
+                                    <button class="btn" type="button">
+                                        <i class="fas fa-folder-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l-9 m-12 c-12">
+                    <div class="img-house">
+                    </div>
+                </div>
+                <div class="col c-12">
+                    <div class="area-name">
+                        <div class="row">
+                            <div class="col l-4 m-6 c-12">
+                                <a class="link-room" href="livingroom.html">
+                                    <div class="device ">
+                                        <!-- <img src="asset/img/sofa.jpg" alt=""> -->
+                                        <i class="fas fa-couch"></i>
+                                        <p>Living room</p>
+                                        <span>x3 device</span>
+                                    </div>
+        
+                                </a> 
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <a class="link-room" href="bedroom.html">
+                                    <div class="device ">
+                                        <i class="fas fa-bed"></i>
+                                        <p>Bed room</p>
+                                        <span>x2 device</span>
+                                    </div>
+        
+                                </a>
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <a class="link-room" href="kitchen.html">
+                                    <div class="device ">
+                                        <i class="fas fa-box-tissue"></i>  
+                                        <p>Kitchen</p>
+                                        <span>x4 device</span>
+                                    </div>
+                                    
+                                </a>
+                            </div>
+                            <div class="col l-4 m-6 m-6 c-12">
+                                <a class="link-room" href="grage.html">
+                                    <div class="device ">
+                                        <i class="fas fa-laptop-house"></i>
+                                        <p>Garage</p>
+                                        <span>x1 device</span>
+                                    </div>
+        
+                                </a>
+        
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <a class="link-room" href="Rooto.html">
+                                    <div class="device ">
+                                        <i class="fas fa-cloud-sun"></i>
+                                        <p>Roofto</p>
+                                        <span>x1 device</span>
+                                    </div>
+        
+                                </a>
+        
+                            </div>
+                            <div class="col l-4 m-6 c-12">
+                                <a class="link-room" href="office.html">
+                                    <div class="device ">
+                                        <i class="far fa-folder-open"></i>
+                                        <p>Office</p>   
+                                        <span>x0 device</span>
+                                    </div>
+                                </a>
+                            </div>
+        
+                        </div>
+                    </div>  
+
+                </div>
+            </div>
+  
+ 
+        </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+<!-- <script src="../js/control.js"></script> -->
+<script src="/js/all.js"></script>
+<script>year()</script>
+</html>

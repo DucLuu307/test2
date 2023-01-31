@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/asset/static.css">
+    <link rel="stylesheet" href="/asset/responsive_static.css">
+    <script src="/chart.js"></script>
+
+</head>
+<body>
+    <div id="wrapper">
+      <div class="main-header">
+          <div class="title-pages">
+              <h2>Static</h2>
+          </div>
+          <div class="avatar">
+            <img src = "/img/avatar.jpg" >
+          </div>
+          <div class="main-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="static.html">Static</a></li>
+                <li><a href="#">Routines</a></li>
+                <li><a href="adddevice.html">Setting</a></li>
+            </ul>
+        </div>
+      </div>
+        <div class="main-chart">
+          <div id="select-date"> 
+            <span class="btn active" id="day">Day</span>
+            <span class="btn" id="week">Week</span>
+            <span class="btn" id="month">Month</span>
+          </div>
+          <canvas id="static-Chart" style="width:100%;max-width:100%  ;height: 300px"></canvas>
+        </div>
+        <div class="sumElectric">
+          <div class="header-date">
+            <div class="date">
+              AUG-2022
+            </div>
+            <div class="choosedate">
+              Choose Date
+            </div>
+          </div>
+          <div class="summoney">
+            <span>120</span>usd
+          </div>
+          <div class="summoney">
+            <span>336</span>kwh
+          </div>
+
+        </div>
+    </div>
+    <script>
+        // START ACTIVE MENU
+        var header = document.getElementById("select-date");
+        var btns = header.getElementsByClassName("btn");
+        var dataDate = ["27/03/2022","28/03/2022","29/03/2022","31/03/2022","01/04/2022","02/04/2022","03/04/2022","04/04/2022","05/04/2022","06/04/2022"]
+        var dataChartStatics = [860,1140,1060,1060,1070,1110,1330,2210,7830,2478];
+        dataChart(dataDate,dataChartStatics);
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+           if(this.id === "day"){
+              dataDate = ["27/03/2022","28/03/2022","29/03/2022","31/03/2022","01/04/2022","02/04/2022","03/04/2022","04/04/2022","05/04/2022","06/04/2022"];
+              dataChartStatics = [900,1240,1360,1560,1870,1910,2330,3210,4830,10478];
+           }
+           if(this.id === "week"){
+              dataDate = ["30/03/2022","5/04/2022","12/04/2022","19/04/2022","2/05/2022","09/05/2022","16/05/2022","23/06/2022","30/06/2022","7/07/2022"];
+              dataChartStatics = [4260,1340,4460,160,1670,1750,3230,4510,6830,19478];
+           }
+           if(this.id === "month"){
+             dataDate = ["01/03/2022","01/04/2022","01/05/2022","01/06/2022","01/07/2022","01/08/2022","01/09/2022","01/10/2022","01/11/2022","01/12/2022"];
+             dataChartStatics = [1160,1340,1060,1060,1070,1110,1330,22210,17830,20478];
+           }
+           dataChart(dataDate,dataChartStatics);
+          var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace("active", "");
+            this.className += " active";
+          });
+        }
+        // end
+        //START CHART
+        function dataChart(dataDate,dataChartStatics) {
+          new Chart("static-Chart", {
+          type: "line",
+          data: {
+            labels: dataDate,
+            datasets: [{ 
+              data: dataChartStatics,
+              borderColor: "red",
+              fill: false
+            }]
+          },
+          options: {
+            legend: {display: false}
+          }
+        });
+        }
+        //end
+    </script>
+</body>
+
+</html>

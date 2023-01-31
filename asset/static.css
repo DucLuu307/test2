@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main-header{
+    background: #09182d;
+    display: flow-root;
+}
+.main-header,.main-chart{
+    padding: 15px 25px;
+}
+.main-header .title-pages{
+    float: left
+}
+.main-header .title-pages h2{
+    font-size: 26px;
+    color: white;
+    padding-top: 8px;
+}
+.main-header .avatar{
+    float: right;
+}
+.main-header .avatar img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.main-header .main-menu{
+    padding-top: 14px;
+    text-align: center;
+    font-size: 20px;
+}
+.main-header .main-menu ul li{
+    display: inline;
+    list-style: none;
+    padding: 20px;
+}
+.main-header .main-menu ul li a{
+    text-decoration: none;
+}
+.main-header .main-menu ul li a:hover{
+    color: antiquewhite;
+    font-weight: bold;
+}
+.main-chart #select-date{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.main-chart span{
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#select-date .active{
+    background-color: #ef3226;
+    color: white;
+}
+.sumElectric{
+    width: 290px;
+    height: 140px;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    padding: 0px 10px;
+    border-radius: 10px;
+
+}
+.header-date{
+    padding: 10px 5px;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.date{
+    padding-top: 8px;
+}
+.choosedate{
+    width: 100px;
+    height: 28px;
+    padding: 6px 10px 0px;
+    background: orangered;
+    border-radius: 6px;
+}
+.choosedate:hover{
+    cursor: pointer;
+}
+.summoney{
+    font-size: 18px;
+    padding: 20px 40px;
+}
+.summoney span{
+    font-size: 32px;
+}
+.summoney:nth-child(2){
+    float: right;
+}

@@ -1,0 +1,61 @@
+@media (min-width: 1024px){
+
+}
+
+/* TABLET */
+@media (min-width: 740px) and (max-width: 1023px){
+    .menu{
+        display: block;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 739px){
+    .header{
+        height: 46px;
+    }
+    .header .item-menu ul{
+        display: none;
+        position: relative;
+    }
+    .item-menu label{
+        display: block;
+        font-size: 22px;
+        color: red;
+    }
+    .header .home a{
+        font-size: 12px;
+        letter-spacing: 4px;
+        font-weight: 160;
+    }
+    .content .img img{
+        width: 100%;
+    }
+    .content .img p{
+        font-size: 29px;
+    }
+    .introduce{
+        display: block;
+    }
+    .introduce .introduce-img{
+        display: none;
+    }
+    .introduce .introduce-trandition span{
+        font-size: 14px;
+        padding-right: 54px;
+        line-height: 1.5;
+    }
+    .introduce .introduce-trandition .title{
+        padding-right: 40px;
+    }
+    .introduce .introduce-trandition h2{
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+    .introduce .introduce-trandition p{
+        margin-bottom: 15px;
+    }
+    .menu{
+        display: block;
+    }
+}

@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.wrap-login{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.bg-login{
+    background-image: url("../img/bg-login.jpg");
+    box-shadow: rgb(0 0 0 / 15%) 2.4px 2.4px;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+.form-login h2{
+    padding: 30px 35px;
+    text-align:center;
+}
+.form-login{
+    width: 450px;
+    margin:auto;
+    box-shadow: 17px 24px 65px -37px #ccc;
+    padding: 0 2.35rem 2rem;
+}
+.form-login input[type=text],input[type=password]{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    color: #4f4f4f;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.form-login label{
+    color: #464646;
+    text-shadow: 0 1px 0 #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+.form-login #valid{
+    color:red;
+    margin-bottom: 10px;
+    display: block;
+}
+.form-login input[type=button]{
+    font-size: 16px;
+    background: #212a3f;
+    border: 1px solid #212a3f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+.form-login input[type=button]:hover{
+    background-color: #313e5c;
+    border-color: #313e5c;
+    color: #fff;
+}
